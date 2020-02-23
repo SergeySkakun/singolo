@@ -19,7 +19,7 @@ ul {
 }
 
 .container {
-  width: 940px;
+  width: 945px;
   margin: 0 auto;
 }
 
@@ -33,7 +33,7 @@ ul {
 }
 
 header {
-  height: 89px;
+  height: 90px;
   grid-area: header;
   background: #2d303a;
   border-bottom: 5px solid #323746;
@@ -54,20 +54,25 @@ header .container {
   align-items: center;
 }
 
+header img {
+  margin-top: 2px;
+}
+
 nav {
   width: 371px;
+  margin: 7px 7px 0 0;
   display: grid;
   justify-self: end;
 }
 
 nav ul {
   display: grid;
-  grid-gap: 28px;
+  grid-gap: 29px;
   grid-template-columns: repeat(5, 1fr);
   justify-items: end;
 }
 
-nav li {
+nav a {
   font-family: Lato-Bold, Verdana, sans-serif;
   font-size: 12px;
   text-transform: uppercase;
@@ -75,11 +80,11 @@ nav li {
   cursor: pointer;
 }
 
-nav li:first-child {
+nav li:first-child a {
   color: #f06c64;
 }
 
-nav li:hover {
+nav a:hover {
   color: #f06c64;
 }
 
@@ -93,7 +98,7 @@ nav li:hover {
   height: 100%;
   display: grid;
   grid-template-columns: 16px auto 16px;
-  grid-gap: 54px;
+  grid-gap: 57px;
   align-content: center;
 }
 
@@ -110,6 +115,10 @@ button {
   align-items: center;
 }
 
+.content img {
+  padding-bottom: 6px;
+}
+
 .services {
   height: 495px;
   background: #f2f2f2;
@@ -117,11 +126,11 @@ button {
 }
 
 .our_services {
-  padding: 66px 0 52px 0;
+  padding: 59px 0 45px 0;
 }
 
 h2 {
-  margin-bottom: 30px;
+  margin-bottom: 19px;
   font-family: Lato-Black, Verdana, sans-serif;
   font-size: 30px;
   color: #666d89
@@ -135,14 +144,14 @@ p {
 .description_services {
   font-family: Lato-Light, Verdana, sans-serif;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 31px;
   color: #767e9e;
 }
 
 .list_services ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 35px 20px;
+  grid-gap: 29px 13px;
 }
 
 .list_services li {
@@ -152,7 +161,7 @@ p {
   grid-template-areas:
   "img h3"
   "img item";
-  grid-gap: 16px 20px;
+  grid-gap: 7px 19px;
 }
 
 .list_services img {
