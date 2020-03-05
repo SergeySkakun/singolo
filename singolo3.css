@@ -1,0 +1,78 @@
+@import "./fonts.css";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 945px;
+  margin: 0 auto;
+}
+
+h2 {
+
+  font-family: Lato-Black, Verdana, sans-serif;
+  font-size: 30px;
+  color: #f0d8d9;
+}
+
+h3 {
+  font-family: Lato-Black, Verdana, sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  color: #f0d8d9;
+}
+
+p {
+  font-family: Lato-Light, Verdana, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #f0d8d9;
+}
+
+input, textarea {
+  border: 0px;
+  background-color: #d6564f;
+  border-radius: 5px;
+}
+
+input::placeholder, textarea::placeholder {
+  font-family: Lato-Black, Verdana, sans-serif;
+  font-size: 12px;
+  line-height: 22px;
+  color: #f48c8f;
+}
+
+#submit_button {
+  display: none;
+}
+
+.contacts span {
+  font-family: Lato-Black, Verdana, sans-serif;
+  font-size: 12px;
+  line-height: 22px;
+  color: #f0d8d9;
+}
+
+footer span {
+  font-family: Lato-Black, Verdana, sans-serif;
+  font-size: 12px;
+  line-height: 6px;
+  color: #666d89;
+}
+
+.social li {
+  display: inline;
+  cursor: pointer;
+}
+
+
