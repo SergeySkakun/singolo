@@ -51,7 +51,7 @@ p {
 
 .quote .wrapper {
   display: grid;
-  grid-template-columns: 620px 303px;
+  grid-template-columns: 620px 304px;
   justify-content: space-between;
   margin-top: 44px;
   margin-bottom: 68px;
@@ -66,7 +66,7 @@ form {
 }
 
 .contacts img {
-  margin-right: 11px;
+  margin-right: 10px;
 }
 
 input, textarea {
@@ -75,7 +75,7 @@ input, textarea {
   border-radius: 5px;
 }
 
-input::placeholder, textarea::placeholder {
+input::placeholder, textarea::placeholder, .submit_button {
   padding-left: 15px;
   font-family: Lato-Regular, Verdana, sans-serif;
   font-size: 12px;
@@ -87,8 +87,15 @@ textarea::placeholder {
   padding-top: 8px;
 }
 
-#submit_button {
-  display: none;
+.submit_button {
+  height: 30px;
+  background-color: #a31d2f;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit_button:hover {
+  background-color: rgb(255, 0, 76);
 }
 
 .contact_information p {
@@ -101,7 +108,7 @@ textarea::placeholder {
 }
 
 .contacts span {
-  font-family: Lato-Regulart, Verdana, sans-serif;
+  font-family: Lato-Regular, Verdana, sans-serif;
   font-size: 12px;
   line-height: 22px;
   color: #f0d8d9;
@@ -122,7 +129,6 @@ footer .wrapper {
 footer span {
   font-family: Lato-Regular, Verdana, sans-serif;
   font-size: 12px;
-  line-height: 6px;
   color: #666d89;
 }
 
@@ -130,5 +136,3 @@ footer span {
   display: inline;
   cursor: pointer;
 }
-
-

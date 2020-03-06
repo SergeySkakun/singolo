@@ -20,11 +20,11 @@
         <div class="wrapper">
           <div class="quote_form">
             <form action="./hello.html" method="POST">
-              <input type="text" name="name" placeholder="Name (Required)">
-              <input type="email" name="email" id="email" placeholder="Email (Required)">
+              <input type="text" name="name" placeholder="Name (Required)" required>
+              <input type="email" name="email" id="email" placeholder="Email (Required)" required>
               <input type="text" name="subject" placeholder="Subject">
-              <textarea name="descrition" id="descrition" cols="30" rows="10" placeholder="Describe your project in detail..."></textarea>
-              <input type="submit" id="submit_button" value="Submit">
+              <textarea name="description" id="description" placeholder="Describe your project in detail..."></textarea>
+              <input type="submit" class="submit_button" c value="Submit">
             </form>
           </div>
           <div class="contact_information">
@@ -36,13 +36,15 @@
             </p>
             <ul class="contacts">
               <li>
-                <img src="./assets/images/location.png" alt="location icon"><span>Elm St. 14/05 Lost City </span>
+                <a href="https://www.google.com/maps/place/Lida+Castle/@53.8943478,25.283181,14z/data=!4m5!3m4!1s0x46de8aec4c782ebb:0x9cee32dc9ff4a593!8m2!3d53.8872276!4d25.3027046">
+                  <img src="./assets/images/location.png" alt="location icon"><span>Elm St. 14/05 Lost City </span>
+                </a>
               </li>
               <li>
-                <a href="tel:+"><img src="./assets/images/phone.png" alt="phone icon"><span>03528 331 86 35</span></a>
+                <a href="tel:+035283318635"><img src="./assets/images/phone.png" alt="phone icon"><span>03528 331 86 35</span></a>
               </li>
               <li>
-                <a href="mailto:"><img src="./assets/images/mail.png" alt="mail icon"><span>info@singolo.com</span></a>
+                <a href="mailto:info@singolo.com"><img src="./assets/images/mail.png" alt="mail icon"><span>info@singolo.com</span></a>
               </li>
             </ul>
           </div>
