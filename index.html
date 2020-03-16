@@ -11,17 +11,17 @@
   <h1>Singolo</h1>
   <div class="wrapper">
     <header>
-      <div class="container">
+      <div id="home" class="container">
         <a href="./index.html">
           <img src="./assets/images/logo.png" alt="logo">
         </a>
-        <nav>
+        <nav id="menu">
           <ul>
-            <li><a href="#" title="Home">Home</a></li>
-            <li><a href="#" title="Services">Services</a></li>
-            <li><a href="#" title="Portfolio">Portfolio</a></li>
-            <li><a href="#" title="About">About</a></li>
-            <li><a href="#" title="Contact">Contact</a></li>
+            <li><a href="#home" class="active" title="Home">Home</a></li>
+            <li><a href="#services" title="Services">Services</a></li>
+            <li><a href="#portfolio" title="Portfolio">Portfolio</a></li>
+            <li><a href="#about" title="About">About</a></li>
+            <li><a href="#contact" title="Contact">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -41,7 +41,7 @@
           </button>
         </div>
       </section>
-      <section class="services">
+      <section id="services" class="services">
         <div class="container">
           <div class="our_services">
             <h2>Our Services</h2>
@@ -102,20 +102,20 @@
           </div>
         </div>
       </section>
-      <section class="portfolio">
+      <section id="portfolio" class="portfolio">
         <div class="container">
           <div>
             <h2>Portfolio</h2>
             <p class="portfolio_text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-            <ul class="tags">
-              <li class="current_tag"><a href="#">All</a></li>
+            <ul id="tabs" class="tags">
+              <li class="active_tab"><a class="active_tab_text" href="#">All</a></li>
               <li><a href="#">Web Design</a></li>
               <li><a href="#">Graphic Design</a></li>
               <li><a href="#">Artwork</a></li>
             </ul>
           </div>
           <div>
-            <ul class="galerea">
+            <ul id="galerea" class="galerea">
               <li><img src="./assets/images/portfolio1.jpg" alt=""></li>
               <li><img src="./assets/images/portfolio2.jpg" alt=""></li>
               <li><img src="./assets/images/portfolio3.jpg" alt=""></li>
@@ -132,7 +132,7 @@
           </div>
         </div>
       </section>
-      <section class="about_us">
+      <section id="about" class="about_us">
         <div class="container">
           <h2>About Us</h2>
           <p class="description_section">
@@ -187,7 +187,7 @@
           </ul>
       </div>
       </section>
-      <section class="quote">
+      <section id="contact" class="quote">
         <div class="container">
           <h2>Get a Quote</h2>
           <p>
@@ -200,9 +200,9 @@
               <form action="./hello.html" method="POST">
                 <input type="text" name="name" placeholder="Name (Required)" required>
                 <input type="email" name="email" id="email" placeholder="Email (Required)" required>
-                <input type="text" name="subject" placeholder="Subject">
+                <input type="text" id="subject" name="subject" placeholder="Subject">
                 <textarea name="description" id="description" placeholder="Describe your project in detail..."></textarea>
-                <input type="submit" class="submit_button" c value="Submit">
+                <input type="submit" id="submit" class="submit_button" value="Submit">
               </form>
             </div>
             <div class="contact_information">
@@ -226,6 +226,13 @@
                 </li>
               </ul>
             </div>
+          </div>
+          <div id="new_window" class="new_window hidden">
+            <span class="new_window_title">Письмо отправлено</span>
+            <br>
+            <p class="new_window_subject"></span>
+            <p class="new_window_description"></p>
+            <button class="new_window_button">OK</button>
           </div>
         </div>
       </section>

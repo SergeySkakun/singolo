@@ -77,7 +77,7 @@ nav a {
   cursor: pointer;
 }
 
-nav li:first-child a {
+.active {
   color: #f06c64;
 }
 
@@ -240,11 +240,11 @@ button {
   color: #767e9e;
 }
 
-.tags .current_tag {
+.tags .active_tab {
   border: 1px solid #c5c5c5;
 }
 
-.current_tag a {
+.tags .active_tab_text {
   color: #c5c5c5;
 }
 
@@ -254,6 +254,13 @@ button {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 16px;
   justify-content: start;
+}
+
+.galerea .active {
+  width: 206px;
+  size: 170px;
+  border: 5px solid #F06C64;
+  cursor: pointer;
 }
 
 .about_us {
@@ -333,6 +340,51 @@ form {
   grid-template-rows: repeat(3, 39px) 202px;
   justify-content: space-between;
   grid-gap: 15px;
+}
+
+.new_window {
+  position: fixed;
+  top: 40vh;
+  right: 40vw;
+  width: 250px;
+  padding: 3px;
+  background-color: #f06c64;
+  border: 2px solid whitesmoke;
+  border-radius: 3px;
+  font-family: Lato-Regular, Verdana, sans-serif;
+  font-size: 12px;
+  text-align: justify;
+}
+
+.new_window.hidden {
+  display: none;
+}
+
+.new_window .new_window_subject {
+  max-height: 50px;
+  font-family: Lato-Regular, Verdana, sans-serif;
+  font-size: 12px;
+  color: black;
+  line-height: normal;
+}
+
+.new_window .new_window_description {
+  max-height: 300px;
+  font-family: Lato-Regular, Verdana, sans-serif;
+  font-size: 12px;
+  color: black;
+  line-height: normal;
+}
+
+.new_window_button {
+  width: 100%;
+  color: white;
+  background-color: #a31d2f;
+  border-radius: 5px;
+}
+
+.new_window_button:hover {
+  background-color: rgb(255, 0, 76);
 }
 
 input, textarea {
