@@ -27,14 +27,22 @@
       </div>
     </header>
     <main>
-      <section class="slider">
+      <section id="slider" class="slider red">
         <div class="container">
           <button class="slider_button_left">
             <img src="./assets/images/left_arrow.png" alt="left arrow">
           </button>
-          <div class="content">
-            <img src="./assets/images/iph_vertical.png" alt="vertical iPhone">
-            <img src="./assets/images/iph_horizontal.png" alt="horizontal iPhone">
+          <div id="slider_content" class="slider_content_1">
+            <div class="vertical_phone_block">
+              <div class="black_vertical hidden"></div>
+              <img id="vertical_phone_img" src="./assets/images/iph_vertical.png" alt="vertical iPhone">
+              <button id="vertical_phone_button" class="vertical_phone_button"></button>
+            </div>
+            <div class="horizontal_phone_block">
+              <div class="black_horizontal hidden"></div>
+              <img id="horizontal_phone_img" src="./assets/images/iph_horizontal.png" alt="horizontal iPhone">
+              <button id="horizontal_phone_button" class="horizontal_phone_button"></button>
+            </div>
           </div>
           <button class="slider_button_right">
             <img src="./assets/images/right_arrow.png" alt="right arrow">
